@@ -879,8 +879,8 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 /* .inputgroup input::-webkit-calendar-picker-indicator{display:inline-block; position:absolute; left:-16px; width:22px; height:22px; padding:0; background:url(./../images/ico_cal22.svg)} */
 .inputgroup input::-webkit-calendar-picker-indicator{background:url(./../images/ico_cal22.svg)}
 .inputgroup input[type=date]::before{content:attr(placeholder); color:#BEC9D4; font-weight:200; width:100%}
-/* .inputgroup input[type=date]:focus::before,
-.inputgroup input[type=date]:valid::before{display:none} */
+.inputgroup input[type=date]:focus::before,
+.inputgroup input[type=date]:valid::before{display:none}
 .inputgroup .w2selectbox_native{width:100%; border:none}
 .inputgroup .w2selectbox_native_select{-webkit-appearance:none;  -moz-appearance:none; appearance:none; height:40px; border:1px solid var(--bordercolor-select); background:var(--ico-select); background-repeat: no-repeat; background-position: calc(100% - 8px) center; background-color:var(--bgcolor-selectbox); padding-left:8px; padding-right:28px}
 .inputgroup .req .w2selectbox_native_select{border:1px solid var(--bordercolor-input-req); background-color: var(--bgcolor-input-req);}
