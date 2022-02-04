@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi, viewport-fit=cover">
+<title>mobile form test 페이지 입니다.</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="/nomark/common/js/swiper.js"></script>
+<script type="text/javascript" src="/nomark/common/js/common.js"></script>
+<link href="/nomark/common/css/all.css" type="text/css" rel="stylesheet">
+<link href="/nomark/common/css/swiper.css" type="text/css" rel="stylesheet">
+<style>
+ 
+</style>
+</head> 
+<body>
+    <div id="mf_wq_uuid_2" class="w2group wrapper">
+        <section id="mf_wq_uuid_3" class="w2group header">
+            <div id="mf_wq_uuid_4" class="w2group titlebar">
+                <div id="mf_wq_uuid_5" class="w2group cta"><h2 id="mf_wq_uuid_6" class="w2textbox title">Input Form</h2></div>
+            </div>
+            <button id="mf_wq_uuid_7" class="w2group btn_menu"></button>
+        </section>
+        <section id="mf_wq_uuid_8" class="w2group container">
+            <div id="mf_wq_uuid_9" class="w2group container_inner">
+                <section id="mf_wq_uuid_10" class="w2group">
+                    <div id="mf_wq_uuid_11" class="w2group titlebox"><h3 id="mf_wq_uuid_12" class="w2textbox">Searchbox - 고객정보</h3></div>
+                    <div id="mf_wq_uuid_13" class="w2group searchbox">
+                        <div id="mf_wq_uuid_14" class="w2group inputbox">
+                            <div id="mf_wq_uuid_15" class="w2group boxitem">
+                                <label id="mf_wq_uuid_16" class="w2textbox" for="">상품번호</label><input id="mf_wq_uuid_17" class="w2input" type="text" placeholder="01000000000" />
+                                <input id="mf_input2" class="w2input tar" type="text" placeholder="01000000000" />
+                            </div>
+                            <div id="mf_wq_uuid_19" class="w2group boxitem">
+                                <label id="mf_wq_uuid_20" class="w2textbox" for="">고객명(disable)</label><input id="mf_wq_uuid_21" class="w2input w2input_disabled" type="text" placeholder="" disabled="disabled" />
+                            </div>
+                            <div id="mf_wq_uuid_22" class="w2group boxitem"><label id="mf_wq_uuid_23" class="w2textbox req" for="">고객명</label><input id="mf_input1" class="w2input req" type="text" placeholder="홍길동" /></div>
+                            <div id="mf_wq_uuid_25" class="w2group boxitem"><label id="mf_wq_uuid_26" class="w2textbox" for="">생년월일</label><input id="mf_wq_uuid_27" class="w2input" type="text" placeholder="1900-00-00" /></div>
+                            <div id="mf_wq_uuid_28" class="w2group boxitem"><label id="mf_wq_uuid_29" class="w2textbox req" for="">생년월일</label><input id="mf_wq_uuid_30" class="w2input req" type="text" placeholder="1900-00-00" /></div>
+                            <div id="mf_wq_uuid_31" class="w2group boxitem">
+                                <label id="mf_wq_uuid_32" class="w2textbox" for="">설치주소(시군구)</label><input id="mf_wq_uuid_33" class="w2input ico_address" type="search" placeholder="설치주소 검색입력" />
+                                <input id="mf_wq_uuid_34" class="w2input ico_address w2input_disabled" type="search" placeholder="" disabled="disabled" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="mf_wq_uuid_35" class="w2group">
+                    <div id="mf_wq_uuid_36" class="w2group titlebox"><h3 id="mf_wq_uuid_37" class="w2textbox">Searchbox - 상담이력</h3></div>
+                    <div id="mf_wq_uuid_38" class="w2group searchbox">
+                        <div id="mf_wq_uuid_39" class="w2group srchitem">
+                            <label id="mf_wq_uuid_40" class="w2textbox req" for="">조회기간(native)</label>
+                            <div id="mf_wq_uuid_41" class="w2group inputgroup">
+                                <input id="mf_wq_uuid_42" class="w2input req" type="date" placeholder="YYYY-MM-DD" required="" /><span id="mf_wq_uuid_43" class="w2textbox">~</span>
+                                <input id="mf_wq_uuid_44" class="w2input req" type="date" placeholder="YYYY-MM-DD" required="" />
+                            </div>
+                        </div>
+                        <div id="mf_wq_uuid_45" class="w2group srchitem">
+                            <label id="mf_wq_uuid_46" class="w2textbox req" for="">조회기간(websquare component)</label>
+                            <div id="mf_wq_uuid_47" class="w2group inputgroup">
+                                <div id="mf_wq_uuid_48" class="w2inputCalendar_div req">
+                                    <div id="mf_wq_uuid_48_div_input" class="w2inputCalendar_div_input" style="width: 133px; height: 40px;">
+                                        <input id="mf_wq_uuid_48_input" name="mf_wq_uuid_48_input" class="w2inputCalendar_divInput" tabindex="0" placeholder="YYYY-MM-DD" style="width: 83px; height: 38px;" />
+                                    </div>
+                                    <div id="mf_wq_uuid_48_div_img" class="w2inputCalendar_div_img">
+                                        <button
+                                            type="button"
+                                            id="mf_wq_uuid_48_img"
+                                            style="background-image: url('http://127.0.0.1:55297/websquare/uiplugin/inputCalendar/images/icon_calendar.gif'); top: 9px;"
+                                            class="w2inputCalendar_button"
+                                            tabindex="0"
+                                        >
+                                            달력에서 선택
+                                        </button>
+                                    </div>
+                                </div>
+                                <span id="mf_wq_uuid_49" class="w2textbox">~</span>
+                                <div id="mf_wq_uuid_50" class="w2inputCalendar_div">
+                                    <div id="mf_wq_uuid_50_div_input" class="w2inputCalendar_div_input" style="width: 133px; height: 40px;">
+                                        <input id="mf_wq_uuid_50_input" name="mf_wq_uuid_50_input" class="w2inputCalendar_divInput" tabindex="0" placeholder="YYYY-MM-DD" style="width: 83px; height: 38px;" />
+                                    </div>
+                                    <div id="mf_wq_uuid_50_div_img" class="w2inputCalendar_div_img">
+                                        <button
+                                            type="button"
+                                            id="mf_wq_uuid_50_img"
+                                            style="background-image: url('http://127.0.0.1:55297/websquare/uiplugin/inputCalendar/images/icon_calendar.gif'); top: 9px;"
+                                            class="w2inputCalendar_button"
+                                            tabindex="0"
+                                        >
+                                            달력에서 선택
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mf_wq_uuid_51" class="w2group srchitem">
+                            <label id="mf_wq_uuid_52" class="w2textbox req" for="">selectBox native</label>
+                            <div id="mf_wq_uuid_53" class="w2group inputgroup">
+                                <div id="mf_wq_uuid_54" class="w2selectbox_native fixedWidth req">
+                                    <div class="w2selectbox_native_innerDiv">
+                                        <select class="w2selectbox_native_select" id="mf_wq_uuid_54_input_0">
+                                            <option>-전체-</option>
+                                            <option>상품1</option>
+                                            <option>상품2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="mf_wq_uuid_55" class="w2selectbox_native fixedWidth">
+                                    <div class="w2selectbox_native_innerDiv">
+                                        <select class="w2selectbox_native_select" id="mf_wq_uuid_55_input_0">
+                                            <option>-전체-</option>
+                                            <option>상품1</option>
+                                            <option>상품2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mf_wq_uuid_56" class="w2group inputgroup">
+                                <div id="mf_wq_uuid_57" class="w2selectbox_native fixedWidth">
+                                    <div class="w2selectbox_native_innerDiv">
+                                        <select class="w2selectbox_native_select" id="mf_wq_uuid_57_input_0">
+                                            <option>-전체-</option>
+                                            <option>상품1</option>
+                                            <option>상품2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mf_wq_uuid_58" class="w2group srchitem">
+                            <label id="mf_wq_uuid_59" class="w2textbox req" for="">이름</label>
+                            <div id="mf_wq_uuid_60" class="w2group inputgroup">
+                                <input id="mf_wq_uuid_61" class="w2input req" type="text" required="" /><input id="mf_wq_uuid_62" class="w2input" type="text" />
+                                <input id="mf_wq_uuid_63" class="w2input w2input_disabled" type="text" disabled="disabled" />
+                            </div>
+                            <div id="mf_wq_uuid_64" class="w2group inputgroup"><input id="mf_wq_uuid_65" class="w2input tar" type="text" placeholder="text-align : right" /></div>
+                            <div id="mf_wq_uuid_66" class="w2group inputgroup"><input id="mf_wq_uuid_67" class="w2input col3" type="text" required="" /></div>
+                        </div>
+                        <div id="mf_wq_uuid_68" class="w2group srchitem">
+                            <label id="mf_wq_uuid_69" class="w2textbox req" for="">주민등록번호</label>
+                            <div id="mf_wq_uuid_70" class="w2group inputgroup">
+                                <input id="mf_wq_uuid_71" class="w2input req" type="number" required="" /><span id="mf_wq_uuid_72" class="w2textbox">-</span><input id="mf_wq_uuid_73" class="w2input req" type="number" required="" />
+                            </div>
+                        </div>
+                        <div id="mf_wq_uuid_74" class="w2group srchitem">
+                            <label id="mf_wq_uuid_75" class="w2textbox req" for="">휴대폰번호</label>
+                            <div id="mf_wq_uuid_76" class="w2group inputgroup">
+                                <div id="mf_wq_uuid_77" class="w2group ly_form">
+                                    <div id="mf_wq_uuid_78" class="w2selectbox_native fixedWidth req col1">
+                                        <div class="w2selectbox_native_innerDiv">
+                                            <select class="w2selectbox_native_select" id="mf_wq_uuid_78_input_0">
+                                                <option>010</option>
+                                                <option>011</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <input id="mf_wq_uuid_79" class="w2input req col3" type="number" required="" />
+                                </div>
+                            </div>
+                            <div id="mf_wq_uuid_80" class="w2group inputgroup mt5">
+                                <div id="mf_wq_uuid_81" class="w2group ly_form">
+                                    <div id="mf_wq_uuid_82" class="w2selectbox_native fixedWidth col1">
+                                        <div class="w2selectbox_native_innerDiv">
+                                            <select class="w2selectbox_native_select" id="mf_wq_uuid_82_input_0">
+                                                <option>010</option>
+                                                <option>011</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <input id="mf_wq_uuid_83" class="w2input col3" type="number" required="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="mf_wq_uuid_84" class="w2group">
+                    <div id="mf_wq_uuid_85" class="w2group titlebox"><h3 id="mf_wq_uuid_86" class="w2textbox">DropDown - small</h3></div>
+                    <div id="mf_wq_uuid_87" class="w2group titlebargroup">
+                        <div id="mf_wq_uuid_88" class="w2selectbox_native fixedWidth wd-100">
+                            <div class="w2selectbox_native_innerDiv">
+                                <select class="w2selectbox_native_select" id="mf_wq_uuid_88_input_0">
+                                    <option>1개월</option>
+                                    <option>2개월</option>
+                                    <option>3개월</option>
+                                    <option>4개월</option>
+                                    <option>5개월</option>
+                                    <option>6개월</option>
+                                    <option>7개월</option>
+                                    <option>8개월</option>
+                                    <option>9개월</option>
+                                    <option>10개월</option>
+                                    <option>11개월</option>
+                                    <option>12개월</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="mf_wq_uuid_89" class="w2selectbox_native fixedWidth wd-100 req">
+                            <div class="w2selectbox_native_innerDiv">
+                                <select class="w2selectbox_native_select" id="mf_wq_uuid_89_input_0">
+                                    <option>1개월</option>
+                                    <option>2개월</option>
+                                    <option>3개월</option>
+                                    <option>4개월</option>
+                                    <option>5개월</option>
+                                    <option>6개월</option>
+                                    <option>7개월</option>
+                                    <option>8개월</option>
+                                    <option>9개월</option>
+                                    <option>10개월</option>
+                                    <option>11개월</option>
+                                    <option>12개월</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="mf_wq_uuid_90" class="w2group">
+                    <div id="mf_wq_uuid_91" class="w2group titlebox"><h3 id="mf_wq_uuid_92" class="w2textbox">Checkbox</h3></div>
+                    <div id="mf_wq_uuid_93" class="w2group">
+                        <div id="mf_wq_uuid_94" class="w2checkbox">
+                            <div class="w2checkbox_item w2checkbox_item_0">
+                                <input type="checkbox" class="w2checkbox_input" name="mf_wq_uuid_94_input" index="0" id="mf_wq_uuid_94_input_0" /><label class="w2checkbox_label" index="0" for="mf_wq_uuid_94_input_0">Checked</label>
+                            </div>
+                        </div>
+                        <div id="mf_wq_uuid_95" class="w2checkbox">
+                            <div class="w2checkbox_item w2checkbox_item_0">
+                                <input type="checkbox" class="w2checkbox_input" name="mf_wq_uuid_95_input" index="0" id="mf_wq_uuid_95_input_0" /><label class="w2checkbox_label" index="0" for="mf_wq_uuid_95_input_0">Unchecked</label>
+                            </div>
+                        </div>
+                        <div id="mf_wq_uuid_96" class="w2checkbox indeterminate">
+                            <div class="w2checkbox_item w2checkbox_item_0">
+                                <input type="checkbox" class="w2checkbox_input" name="mf_wq_uuid_96_input" index="0" id="mf_wq_uuid_96_input_0" /><label class="w2checkbox_label" index="0" for="mf_wq_uuid_96_input_0">Indeterminate</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mf_wq_uuid_97" class="w2group mt5">
+                        <div id="mf_wq_uuid_98" class="w2checkbox" disabled="disabled">
+                            <div class="w2checkbox_item w2checkbox_item_0">
+                                <input type="checkbox" class="w2checkbox_input" name="mf_wq_uuid_98_input" index="0" id="mf_wq_uuid_98_input_0" disabled="disabled" />
+                                <label class="w2checkbox_label w2checkbox_disabled" index="0" for="mf_wq_uuid_98_input_0">Checked</label>
+                            </div>
+                        </div>
+                        <div id="mf_wq_uuid_99" class="w2checkbox" disabled="disabled">
+                            <div class="w2checkbox_item w2checkbox_item_0">
+                                <input type="checkbox" class="w2checkbox_input" name="mf_wq_uuid_99_input" index="0" id="mf_wq_uuid_99_input_0" disabled="disabled" />
+                                <label class="w2checkbox_label w2checkbox_disabled" index="0" for="mf_wq_uuid_99_input_0">Unchecked</label>
+                            </div>
+                        </div>
+                        <div id="mf_wq_uuid_100" class="w2checkbox indeterminate" disabled="disabled">
+                            <div class="w2checkbox_item w2checkbox_item_0">
+                                <input type="checkbox" class="w2checkbox_input" name="mf_wq_uuid_100_input" index="0" id="mf_wq_uuid_100_input_0" disabled="disabled" />
+                                <label class="w2checkbox_label w2checkbox_disabled" index="0" for="mf_wq_uuid_100_input_0">Indeterminate</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="mf_wq_uuid_101" class="w2group">
+                    <div id="mf_wq_uuid_102" class="w2group titlebox"><h3 id="mf_wq_uuid_103" class="w2textbox">Radio</h3></div>
+                    <div id="mf_wq_uuid_104" class="w2group">
+                        <div id="mf_wq_uuid_105" class="w2radio">
+                            <div class="w2radio_item w2radio_item_0">
+                                <input type="radio" class="w2radio_input" name="mf_wq_uuid_105_input" index="0" id="mf_wq_uuid_105_input_0" /><label class="w2radio_label" index="0" for="mf_wq_uuid_105_input_0">item1</label>
+                            </div>
+                            <div class="w2radio_item w2radio_item_1">
+                                <input type="radio" class="w2radio_input" name="mf_wq_uuid_105_input" index="1" id="mf_wq_uuid_105_input_1" /><label class="w2radio_label" index="1" for="mf_wq_uuid_105_input_1">item2</label>
+                            </div>
+                            <div class="w2radio_item w2radio_item_2">
+                                <input type="radio" class="w2radio_input" name="mf_wq_uuid_105_input" index="2" id="mf_wq_uuid_105_input_2" /><label class="w2radio_label" index="2" for="mf_wq_uuid_105_input_2">item3</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mf_wq_uuid_106" class="w2group mt5">
+                        <div id="mf_wq_uuid_107" class="w2radio" disabled="disabled">
+                            <div class="w2radio_item w2radio_item_0">
+                                <input type="radio" class="w2radio_input" name="mf_wq_uuid_107_input" index="0" id="mf_wq_uuid_107_input_0" disabled="disabled" />
+                                <label class="w2radio_label w2radio_disabled" index="0" for="mf_wq_uuid_107_input_0">item1</label>
+                            </div>
+                            <div class="w2radio_item w2radio_item_1">
+                                <input type="radio" class="w2radio_input" name="mf_wq_uuid_107_input" index="1" id="mf_wq_uuid_107_input_1" disabled="disabled" />
+                                <label class="w2radio_label w2radio_disabled" index="1" for="mf_wq_uuid_107_input_1">item2</label>
+                            </div>
+                            <div class="w2radio_item w2radio_item_2">
+                                <input type="radio" class="w2radio_input" name="mf_wq_uuid_107_input" index="2" id="mf_wq_uuid_107_input_2" disabled="disabled" />
+                                <label class="w2radio_label w2radio_disabled" index="2" for="mf_wq_uuid_107_input_2">item3</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="mf_wq_uuid_108" class="w2group">
+                    <div id="mf_wq_uuid_109" class="w2group titlebox"><h3 id="mf_wq_uuid_110" class="w2textbox">Filter</h3></div>
+                    <div id="mf_wq_uuid_111" class="w2checkbox filterbtn">
+                        <div class="w2checkbox_item w2checkbox_item_0">
+                            <input type="checkbox" class="w2checkbox_input" name="mf_wq_uuid_111_input" index="0" id="mf_wq_uuid_111_input_0" /><label class="w2checkbox_label" index="0" for="mf_wq_uuid_111_input_0">필터1</label>
+                        </div>
+                        <div class="w2checkbox_item w2checkbox_item_1">
+                            <input type="checkbox" class="w2checkbox_input" name="mf_wq_uuid_111_input" index="1" id="mf_wq_uuid_111_input_1" /><label class="w2checkbox_label" index="1" for="mf_wq_uuid_111_input_1">필터2</label>
+                        </div>
+                        <div class="w2checkbox_item w2checkbox_item_2">
+                            <input type="checkbox" class="w2checkbox_input" name="mf_wq_uuid_111_input" index="2" id="mf_wq_uuid_111_input_2" /><label class="w2checkbox_label" index="2" for="mf_wq_uuid_111_input_2">필터3</label>
+                        </div>
+                        <div class="w2checkbox_item w2checkbox_item_3">
+                            <input type="checkbox" class="w2checkbox_input" name="mf_wq_uuid_111_input" index="3" id="mf_wq_uuid_111_input_3" /><label class="w2checkbox_label" index="3" for="mf_wq_uuid_111_input_3">필터4</label>
+                        </div>
+                    </div>
+                </section>
+                <section id="mf_wq_uuid_112" class="w2group">
+                    <div id="mf_wq_uuid_113" class="w2group titlebox"><h3 id="mf_wq_uuid_114" class="w2textbox">주소입력</h3></div>
+                    <div id="mf_wq_uuid_115" class="w2group searchbox_type2">
+                        <div id="mf_wq_uuid_116" class="w2group inputbox">
+                            <div id="mf_wq_uuid_117" class="w2group boxitem"><input id="mf_wq_uuid_118" class="w2input adsearch" type="search" placeholder="Placeholder" /></div>
+                        </div>
+                    </div>
+                    <div id="mf_wq_uuid_119" class="w2group searchbox_type2">
+                        <div id="mf_wq_uuid_120" class="w2group inputbox">
+                            <div id="mf_wq_uuid_121" class="w2group boxitem"><input id="mf_wq_uuid_122" class="w2input adsearch w2input_disabled" type="search" placeholder="" disabled="disabled" /></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="mf_wq_uuid_123" class="w2group">
+                    <div id="mf_wq_uuid_124" class="w2group titlebox"><h3 id="mf_wq_uuid_125" class="w2textbox">Textarea</h3></div>
+                    <textarea id="mf_wq_uuid_126" class="w2textarea" placeholder="Placeholder"></textarea><textarea id="mf_msg01" class="w2textarea mt5 w2textarea_readonly" placeholder="" readonly="readonly"></textarea>
+                </section>
+            </div>
+        </section>
+        <section id="mf_wq_uuid_128" class="w2group bottomMenu">
+            <div id="mf_wq_uuid_129" class="w2group navbox">
+                <button id="mf_wq_uuid_130" class="w2group menu01 on">
+                    <div id="mf_wq_uuid_131" class="w2group numberbox"><div id="mf_wq_uuid_132" class="w2textbox num">13</div></div>
+                    <div id="mf_wq_uuid_133" class="w2textbox title">To-Do</div>
+                </button>
+                <button id="mf_wq_uuid_134" class="w2group menu02"><div id="mf_wq_uuid_135" class="w2textbox title">가입정보조회</div></button>
+                <button id="mf_wq_uuid_136" class="w2group menu03"><div id="mf_wq_uuid_137" class="w2textbox title">사전조회</div></button>
+                <button id="mf_wq_uuid_138" class="w2group menu04"><div id="mf_wq_uuid_139" class="w2textbox title">개통지역</div></button>
+                <button id="mf_wq_uuid_140" class="w2group menu05">
+                    <div id="mf_wq_uuid_141" class="w2group numberbox"><div id="mf_wq_uuid_142" class="w2textbox num">3</div></div>
+                    <div id="mf_wq_uuid_143" class="w2textbox title">알림</div>
+                </button>
+            </div>
+        </section>
+    </div>    
+</body>
+</html>
