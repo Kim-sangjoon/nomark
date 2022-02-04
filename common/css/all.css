@@ -667,6 +667,7 @@ a{color:#424952; text-decoration:none}
 
 .w2selectbox_native_mobile .w2selectbox_native_select{height:32px}
 /* initForm */
+input,
 input[type=tel],
 input[type=time],
 input[type=text],
