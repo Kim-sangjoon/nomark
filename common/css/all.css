@@ -1063,17 +1063,20 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .searchbox label{display:inline-block; position:relative; font-weight:700; color:var(--textcolor-searchbox-label); font-size:14px; line-height:20px}
 .searchbox label.req::after{content:''; display:block; position:absolute; top:0; right:-7px; width:6px; height:21px; background:url(./../images/ico_req.svg)}
 .searchbox .inputbox .boxitem input[type=text],
-.searchbox .inputbox .boxitem input[type=search]{background:transparent; border:none; border-bottom:1px solid var(--bordercolor-searchbox-inputbox-boxitem-bottom); padding:0px; height:32px}
+.searchbox .inputbox .boxitem input[type=search],
+.searchbox .inputbox .boxitem input[type=number]{background:transparent; border:none; border-bottom:1px solid var(--bordercolor-searchbox-inputbox-boxitem-bottom); padding:0px; height:32px}
 .searchbox .inputbox .boxitem input[type=text]:focus,
-.searchbox .inputbox .boxitem input[type=search]:focus{border-bottom:2px solid var(--bordercolor-searchbox-inputbox-boxitem-bottom-focus);}
+.searchbox .inputbox .boxitem input[type=search]:focus,
+.searchbox .inputbox .boxitem input[type=number]:focus{border-bottom:2px solid var(--bordercolor-searchbox-inputbox-boxitem-bottom-focus);}
 .searchbox .inputbox .boxitem input.ico_address{padding-left:36px; background:url(./../images/ico_address.svg) no-repeat; background-position:0 1px; /*width:calc(100% - 36px)*/}
 .searchbox .inputbox .boxitem input.req{border-bottom:1px solid #2FB8A8}
 
 .searchbox .inputbox .boxitem input[type=text][readonly],
 .searchbox .inputbox .boxitem input[type=text][disabled],
 .searchbox .inputbox .boxitem input[type=search][readonly],
-.searchbox .inputbox .boxitem input[type=search][disabled]{border-bottom:1px dashed var(--bordercolor-searchbox-inputbox-boxitem-bottom-disable);}
-
+.searchbox .inputbox .boxitem input[type=search][disabled],
+.searchbox .inputbox .boxitem input[type=number][readonly],
+.searchbox .inputbox .boxitem input[type=number][disabled]{border-bottom:1px dashed var(--bordercolor-searchbox-inputbox-boxitem-bottom-disable);}
 
 .searchboxwrap{padding:16px 16px 24px 16px}
 .srchitem label{margin:24px 0 9px 0}
