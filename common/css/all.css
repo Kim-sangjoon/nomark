@@ -708,6 +708,9 @@ textarea[readonly],
 textarea[disabled]{background:var(--bgcolor-input-disabled); border-color:var(--bordercolor-input-disabled); color:var(--textcolor-input-disabled); -webkit-appearance:none}
 
 input[type="search"]::-webkit-search-cancel-button{-webkit-appearance: none; display:block; height:24px; width:24px; background:url(./../images/ico_search_delete.svg) no-repeat}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration{display:none}
 
 .w2radio .w2radio_item, .w2checkbox .w2checkbox_item{display:inline-block; height:20px; padding-top:0; box-sizing:border-box}
 .w2radio .w2radio_item + .w2radio_item,
