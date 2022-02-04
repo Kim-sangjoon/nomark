@@ -865,7 +865,7 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 .inputgroup input[type=datetime-local],
 .inputgroup input[type=month],
 .inputgroup input[type=week],
-.inputgroup input[type=time]{position:relative; text-align: left; width:100% !important; padding-left:40px !important}
+.inputgroup input[type=time]{position:relative; text-align: left; width:100% !important; /* padding-left:40px !important */}
 .inputgroup input::-webkit-datetime-edit-text,
 .inputgroup input::-webkit-datetime-edit-ampm-field,
 .inputgroup input::-webkit-datetime-edit-day-field,
@@ -876,10 +876,10 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 .inputgroup input::-webkit-datetime-edit-second-field,
 .inputgroup input::-webkit-datetime-edit-week-field,
 .inputgroup input::-webkit-datetime-edit-year-field{color:var(--textcolor-init-text)}
-/* .inputgroup input::-webkit-calendar-picker-indicator{display:inline-block; position:absolute; left:-16px; width:22px; height:22px; padding:0; background:url(./../images/ico_cal22.svg)} */
+.inputgroup input::-webkit-calendar-picker-indicator{display:inline-block; position:absolute; left:-16px; width:22px; height:22px; padding:0; background:url(./../images/ico_cal22.svg)}
 /* .inputgroup input::-webkit-calendar-picker-indicator{background:url(./../images/ico_cal22.svg)} */
-.inputgroup input::-webkit-calendar-picker-indicator{display: none;}
-.inputgroup input[type=date]::before{content:attr(placeholder); color:#BEC9D4; font-weight:400; width:100%}
+.inputgroup input[type=date]{background:url(./../images/ico_cal22.svg) no-repeat 8px 8px}
+.inputgroup input[type=date]::before{content:attr(placeholder); color:#BEC9D4; font-weight:200; width:100%; padding-left:30px}
 .inputgroup input[type=date]:focus::before,
 .inputgroup input[type=date]:valid::before{display:none}
 .inputgroup .w2selectbox_native{width:100%; border:none}
@@ -1336,7 +1336,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .white_bgbox .white_bgboxwrap.main.titleinfo{height:calc(100vh - 171px)}
 
 .messagebox{position:relative; background:var(--bgcolor-messagbox); height:100%; width:100%}
-.messagebox .messageboxwrap{}
+/* .messagebox .messageboxwrap{} */
 .messagebox .messageboxwrap.main{margin-top:8px; background:var(--bordercolor-messageboxwrap-main-section)}
 .messagebox .messageboxwrap.main.btnfix{margin-bottom:80px}
 .messagebox .messageboxwrap.main.titleinfo{height:calc(100vh - 171px)}
