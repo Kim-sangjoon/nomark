@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>mobile test페이지 입니다.</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous">
+</script>
+  
+
+
+
+</style>
+</HEAD> 
+<BODY> 
+<h1>test</h1>
+<div>안녕하세요</div>
+<div class="selectbox">
+  <label for="select">옵션1</label>
+  <select id="select">
+    <option>옵션1</option>
+    <option>옵션2</option>
+    <option>옵션3</option>
+    <option>옵션4</option>
+    <option>옵션5</option>
+  </select>
+</div>
+
+<div>
+  <input type="date" placeholder="YYYY-MM-DD" required></input>
+</div>
+  
+  <div>
+  <input type="text" placeholder="입력하세용"></input>
+</div>
+
+<div class="nokeypad">
+  <input type="text" placeholder="텍스트입력 안나오게될까"></input>
+</div>
+ 
+<div>
+  <input type="search" enterkeyhint="search" placeholder="검색어 입력"></input>
+</div>
+  
+  
+  <script>
+    $(function() {
+    var selectTarget = $('.selectbox select');
+
+    selectTarget.change(function(){
+        var select_name = $(this).children('option:selected').text();
+        $(this).siblings('label').text(select_name);
+    });
+});
+    
+    selectTarget.on({
+    'focus' : function () {
+        $(this).parent().addClass('focus');
+    },
+    'blur' : function () {
+        $(this).parent().removeClass('focus');
+    }
+});
+
+
+  </script>
+</BODY>
+
+</HTML>
