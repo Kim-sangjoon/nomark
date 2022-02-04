@@ -875,7 +875,7 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 .inputgroup input::-webkit-datetime-edit-second-field,
 .inputgroup input::-webkit-datetime-edit-week-field,
 .inputgroup input::-webkit-datetime-edit-year-field{color:var(--textcolor-init-text)}
-.inputgroup input::-webkit-calendar-picker-indicator{display:inline-block; position:absolute; left:-16px; width:22px; height:22px; padding:0; background:url(./../images/ico_cal22.svg)}
+/* .inputgroup input::-webkit-calendar-picker-indicator{display:inline-block; position:absolute; left:-16px; width:22px; height:22px; padding:0; background:url(./../images/ico_cal22.svg)} */
 /* .inputgroup input[type=date]::before{content:attr(placeholder); color:#BEC9D4; font-weight:200; width:100%} */
 /* .inputgroup input[type=date]:focus::before,
 .inputgroup input[type=date]:valid::before{display:none} */
