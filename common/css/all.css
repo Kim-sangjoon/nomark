@@ -864,7 +864,7 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 .inputgroup input[type=datetime-local],
 .inputgroup input[type=month],
 .inputgroup input[type=week],
-.inputgroup input[type=time]{position:relative; padding-left:40px !important}
+.inputgroup input[type=time]{position:relative; width:100%; padding-left:40px !important}
 .inputgroup input::-webkit-datetime-edit-text,
 .inputgroup input::-webkit-datetime-edit-ampm-field,
 .inputgroup input::-webkit-datetime-edit-day-field,
@@ -874,11 +874,11 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 .inputgroup input::-webkit-datetime-edit-month-field,
 .inputgroup input::-webkit-datetime-edit-second-field,
 .inputgroup input::-webkit-datetime-edit-week-field,
-.inputgroup input::-webkit-datetime-edit-year-field{color:#202020}
-.inputgroup input::-webkit-calendar-picker-indicator{display:inline-block; position:absolute; left:-16px; width:22px; height:22px; padding:0; -webkit-user-modify:read-only !important; background:url(./../images/ico_cal22.svg)}
-.inputgroup input[type=date]::before{content:attr(placeholder); color:#BEC9D4; font-weight:200; width:100%}
-.inputgroup input[type=date]:focus::before,
-.inputgroup input[type=date]:valid::before{display:none}
+.inputgroup input::-webkit-datetime-edit-year-field{color:var(--textcolor-init-text)}
+.inputgroup input::-webkit-calendar-picker-indicator{display:inline-block; position:absolute; left:-16px; width:22px; height:22px; padding:0; background:url(./../images/ico_cal22.svg)}
+/* .inputgroup input[type=date]::before{content:attr(placeholder); color:#BEC9D4; font-weight:200; width:100%} */
+/* .inputgroup input[type=date]:focus::before,
+.inputgroup input[type=date]:valid::before{display:none} */
 .inputgroup .w2selectbox_native{width:100%; border:none}
 .inputgroup .w2selectbox_native_select{-webkit-appearance:none;  -moz-appearance:none; appearance:none; height:40px; border:1px solid var(--bordercolor-select); background:var(--ico-select); background-repeat: no-repeat; background-position: calc(100% - 8px) center; background-color:var(--bgcolor-selectbox); padding-left:8px; padding-right:28px}
 .inputgroup .req .w2selectbox_native_select{border:1px solid var(--bordercolor-input-req); background-color: var(--bgcolor-input-req);}
@@ -1093,7 +1093,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .inputgroup input, .inputgroup .w2selectbox_native{background-color:var(--bgcolor-input); border-color:var(--bordercolor-input)}
 .inputgroup input.req, .inputgroup .w2selectbox_native, .req.w2inputCalendar_div.req input{background-color:var(--bgcolor-input-req); border-color:var(--bordercolor-input-req)}
 .inputgroup input.req:focus, .inputgroup .w2selectbox_native.req:focus, .req.w2inputCalendar_div.req input:focus{background-color:var(--bgcolor-input-req-focus); border-color:var(--bordercolor-input-req-focus)}
-.inputgroup input.date{padding:0 9px 0 40px; background-image:url(./../images/ico_cal22.svg); background-repeat:no-repeat; background-position:9px center}
+.inputgroup input.date{padding:0 9px 0 40px; background:url(./../images/ico_cal22.svg); background-repeat:no-repeat; background-position:9px center}
 .btnbox{margin-top:24px; display:flex; flex-direction:row; justify-content:space-between}
 .btnbox .selbtn + .selbtn{margin-top:8px}
 .bottomfix .btnbox{margin-top:0; padding:16px; display:flex; flex-direction:row; justify-content:space-between}
