@@ -713,6 +713,7 @@ input[type="search"]::-webkit-search-cancel-button{-webkit-appearance: none; dis
 .w2radio .w2radio_item + .w2radio_item,
 .w2checkbox .w2checkbox_item + .w2checkbox_item,
 .w2checkbox + .w2checkbox{margin-left:8px}
+.w2checkbox {display: inline-block; vertical-align: middle}
 
 
 /* inputcalendar */
