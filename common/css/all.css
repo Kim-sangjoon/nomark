@@ -712,6 +712,7 @@ input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration{display:none}
 
+
 .w2radio .w2radio_item, .w2checkbox .w2checkbox_item{display:inline-block; height:20px; padding-top:0; box-sizing:border-box}
 .w2radio .w2radio_item + .w2radio_item,
 .w2checkbox .w2checkbox_item + .w2checkbox_item,
@@ -879,7 +880,7 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 .inputgroup input[type=date]:focus::before,
 .inputgroup input[type=date]:valid::before{display:none}
 .inputgroup .w2selectbox_native{width:100%; border:none}
-.inputgroup .w2selectbox_native_select{-webkit-appearance:none;  -moz-appearance:none; appearance:none; height:40px; border:1px solid var(--bordercolor-select); background-image:var(--ico-select); background-repeat: no-repeat; background-position: calc(100% - 8px) center; background-color:var(--bgcolor-selectbox); padding-left:8px; padding-right:28px}
+.inputgroup .w2selectbox_native_select{-webkit-appearance:none;  -moz-appearance:none; appearance:none; height:40px; border:1px solid var(--bordercolor-select); background:var(--ico-select); background-repeat: no-repeat; background-position: calc(100% - 8px) center; background-color:var(--bgcolor-selectbox); padding-left:8px; padding-right:28px}
 .inputgroup .req .w2selectbox_native_select{border:1px solid var(--bordercolor-input-req); background-color: var(--bgcolor-input-req);}
 .inputgroup .w2selectbox_native_select:focus{border:1px solid var(--bordercolor-focus)}
 .inputgroup .w2selectbox_native_select::-ms-expand{display:none}
@@ -888,7 +889,7 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 .titlebargroup .w2selectbox_native{width:100%; border:none}
 .titlebargroup .w2selectbox_native_select,
 .w2calendar_selectbox_year_native,
-.w2calendar_selectbox_month_native{-webkit-appearance:none;  -moz-appearance:none; appearance:none; height:32px; border:1px solid var(--bordercolor-select); background-image:var(--ico-select); background-repeat: no-repeat; background-position: calc(100% - 8px) center; background-color:var(--bgcolor-selectbox); padding-left:8px; padding-right:28px}
+.w2calendar_selectbox_month_native{-webkit-appearance:none;  -moz-appearance:none; appearance:none; height:32px; border:1px solid var(--bordercolor-select); background:var(--ico-select); background-repeat: no-repeat; background-position: calc(100% - 8px) center; background-color:var(--bgcolor-selectbox); padding-left:8px; padding-right:28px}
 .titlebargroup .req .w2selectbox_native_select{border:1px solid var(--bordercolor-input-req); background-color: var(--bgcolor-input-req);}
 .titlebargroup .w2selectbox_native_select:focus{border:1px solid var(--bordercolor-focus)}
 .titlebargroup .w2selectbox_native_select::-ms-expand{display:none}
