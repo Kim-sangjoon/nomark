@@ -825,13 +825,13 @@ input[type="radio"], input[type="checkbox"]{display:none}
 .w2checkbox_label.w2checkbox_disabled:before, .w2table_ccb_col_label.w2checkbox_disabled:before{background:var(--ico-cbx1-disable)}
 .indeterminate .w2checkbox_label:before,.indeterminate .w2table_ccb_col_label:before{background:var(--ico-cbx-indeterminate)}
 .indeterminate .w2checkbox_label.w2checkbox_disabled:before,.indeterminate .w2table_ccb_col_label.w2checkbox_disabled:before{background:var(--ico-cbx-indeterminate-disable)}
-input[type="checkbox"]:checked + .w2checkbox_label:before, input[type="checkbox"]:checked + .w2table_ccb_col_label:before{background-image:var(--ico-cbx2)}
-input[type="checkbox"]:checked + .w2checkbox_label.w2checkbox_disabled:before, input[type="checkbox"]:checked + .w2table_ccb_col_label.w2checkbox_disabled:before{background-image:var(--ico-cbx2-disable)}
+input[type="checkbox"]:checked + .w2checkbox_label:before, input[type="checkbox"]:checked + .w2table_ccb_col_label:before{background:var(--ico-cbx2)}
+input[type="checkbox"]:checked + .w2checkbox_label.w2checkbox_disabled:before, input[type="checkbox"]:checked + .w2table_ccb_col_label.w2checkbox_disabled:before{background:var(--ico-cbx2-disable)}
 
 .w2radio_label:before, .w2table_ccb_col_label:before{content:''; position:absolute; left:0; top:50%; width:20.5px; height:20px; margin-top:-10px; background:var(--ico-rdo1) no-repeat 0 0}
 .w2radio_label.w2radio_disabled:before, .w2table_ccb_col_label.w2radio_disabled:before{background:var(--ico-rdo1-disable) no-repeat 0 0}
-input[type="radio"]:checked + .w2radio_label:before, input[type="radio"]:checked + .w2table_ccb_col_label:before{background-image:var(--ico-rdo2)}
-input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type="radio"]:checked + .w2table_ccb_col_label.w2radio_disabled:before{background-image:var(--ico-rdo2-disable)}
+input[type="radio"]:checked + .w2radio_label:before, input[type="radio"]:checked + .w2table_ccb_col_label:before{background:var(--ico-rdo2)}
+input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type="radio"]:checked + .w2table_ccb_col_label.w2radio_disabled:before{background:var(--ico-rdo2-disable)}
 
 .w2checkbox + span{font-size:14px; color:#202020; line-height:20px; vertical-align:middle; display:inline-block}
 .w2checkbox.filterbtn{height:27px}
@@ -841,7 +841,7 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 .filterbtn .w2radio_label, .filterbtn .w2checkbox_label, .filterbtn .w2table_ccb_col_label{background-color:transparent; border:1px solid var(--bordercolor-filterbtn); box-sizing:border-box; border-radius:5px; font-size:13px; height:27px; line-height:2; font-weight:700; color:var(--textcolor-filterbtn); padding:0 8px}
 .filterbtn .w2radio_label + .filterbtn .w2radio_label, .filterbtn .w2checkbox_label + .filterbtn .w2checkbox_label, .filterbtn .w2table_ccb_col_label + .filterbtn .w2table_ccb_col_label{margin-left:8px}
 .filterbtn .w2checkbox_label:before, .filterbtn .w2table_ccb_col_label:before{content:''; position:absolute; left:0; top:0; width:1px; height:1px; margin-top:0; background:none}
-.filterbtn input[type="checkbox"]:checked + .w2checkbox_label:before, .filterbtn input[type="checkbox"]:checked + .w2table_ccb_col_label:before{background-image:none}
+.filterbtn input[type="checkbox"]:checked + .w2checkbox_label:before, .filterbtn input[type="checkbox"]:checked + .w2table_ccb_col_label:before{background:none}
 .filterbtn input[type="checkbox"]:checked + .w2checkbox_label, .filterbtn input[type="checkbox"]:checked + .w2table_ccb_col_label{background-color:var(--bgcolor-filterbtn-checked); border:1px solid var(--bordercolor-filterbtn-checked); color:var(--textcolor-filterbtn-checked)}
 
 .selbtnwrap{flex:1}
@@ -1077,6 +1077,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .searchbox .inputbox .boxitem input[type=search][disabled],
 .searchbox .inputbox .boxitem input[type=number][readonly],
 .searchbox .inputbox .boxitem input[type=number][disabled]{border-bottom:1px dashed var(--bordercolor-searchbox-inputbox-boxitem-bottom-disable);}
+
 
 .searchboxwrap{padding:16px 16px 24px 16px}
 .srchitem label{margin:24px 0 9px 0}
