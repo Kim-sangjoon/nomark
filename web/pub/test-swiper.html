@@ -552,4 +552,28 @@
         </section>
     </div>         
 </body>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+	        slidesPerView: 1,
+	        spaceBetween: 10,
+	        teredSlides: true,
+	        pagination: {
+				el: ".swiper-pagination",
+				clickable: false,
+	        },
+		});
+		console.log(swiper);
+		
+		$(".vhtoggle").on("click",function(){
+			if(carouselbox01.hasClass("col")){
+				carouselbox01.removeClass("col");
+				swiper.enabled = true;				
+			} else {
+				carouselbox01.addClass("col");
+				swiper.enabled = false;
+			}
+		});	
+		
+	};
+</script>
 </html>
