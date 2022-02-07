@@ -1214,7 +1214,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .infobox .grpbox .item .ly > .textgroup{width:114px}
 .infobox .grpbox .item .ly > .textgroup .title{position:relative; display:inline-block; color:var(--textcolor-infobox-grpbox-item-ly-textgroup); font-weight:700; font-size:12px; line-height:22px; padding-left:28px}
 .infobox .grpbox .item .ly > .textgroup .title::before{content:''; display:block; position:absolute; width:22px; height:22px; top:0; left:0; background:url(./../images/ico_smartphone_black.svg) no-repeat}
-.infobox .grpbox .item .ly > .textgroup .price{display:inline-block; color:var(--textcolor-infobox-grpbox-item-ly-textgroup); font-weight:200; font-size:12px; padding-left:28px; margin-top:7px}
+.infobox .grpbox .item .ly > .textgroup .price{display:inline-block; color:var(--textcolor-infobox-grpbox-item-ly-textgroup); font-weight:400; font-size:12px; padding-left:28px; margin-top:7px}
 .infobox .grpbox .item .ly > .graphgroup{margin-top:8px}
 .infobox .grpbox .item .ly > .graphgroup .progbox{position:relative; width:100%; height:8px}
 .infobox .grpbox .item .ly > .graphgroup .progbox .grpbg{position:absolute; display:block; top:0; left:0; background:#DAE3ED; border-radius:99px; height:6px; width:100%}
