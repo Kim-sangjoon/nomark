@@ -941,7 +941,7 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidden}
 .wrapper{display:flex; flex-direction:column; width:100%; min-width:360px; background:var(--main-bgcolor); height:100vh; transition:all .2s}
 .wrapper.white{background:var(--bgcolor-wrapper-white)}
-.header{flex-grow:0; flex-shrink:0; padding:15px 16px; position:relative;/* height:25px */}
+.header{/* flex-grow:0; flex-shrink:0; */ padding:15px 16px; position:relative;/* height:25px */}
 /* .header + .header{display:table} */
 .header .titlebar{display:inline; height:56px}
 .header .titlebar h2.title{display:inline-block; font-weight:700; color:var(--main-txtcolor-title); font-size:16px; vertical-align:middle; height:25px}
