@@ -1363,7 +1363,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .messagebox .textbox ul.msgbox li{position:relative; padding-left:24px}
 .messagebox .textbox ul.msgbox li span{font-size:14px; color:var(--textcolor-messagebox-textbox-ul-msgbox-li-span); font-weight:300}
 .messagebox .textbox ul.msgbox li::before{content:''; position:absolute; top:0; left:0; width:21px; height:21px; background:var(--ico-noti21) no-repeat}
-.bottomfix{flex-grow:0; flex-shrink:0}
+.bottomfix{z-index: 1;}
 .bottomfix.whiteBg{background:var(--bgcolor-messagbox)}
 .bottomfix.whiteBg.shadow{box-shadow:var(--shadow-messagebox-bottomfix-main); z-index: 1}
 .messagebox .bottomfix.main{position:fixed; background:var(--bgcolor-messagebox-bottomfix-main); padding:16px; bottom:72px; width:calc(100% - 32px); box-shadow:var(--shadow-messagebox-bottomfix-main)}
