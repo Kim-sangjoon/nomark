@@ -1223,7 +1223,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .infobox .grpbox .item .ly > .graphgroup .progbox .grpbar.pink{background:linear-gradient(90deg, #AF75F9 0%, #FF82A7 100%)}
 .infobox .grpbox .item .ly > .graphgroup .progbox .grpbar.blue{background:linear-gradient(90deg, #75D1F9 0%, #8B6FFF 100%)}
 .infobox .grpbox .item .ly > .graphgroup .monthbox{position:relative; display:block; width:100%; margin-top:12px}
-.infobox .grpbox .item .ly > .graphgroup .monthbox > .box{position:absolute; display:inline-block; border-radius:3px; padding:2px 4px; color:#FFFFFF; font-size:11px; font-weight:200; line-height:18px; background:#6B7682}
+.infobox .grpbox .item .ly > .graphgroup .monthbox > .box{position:absolute; display:inline-block; border-radius:3px; padding:2px 4px; color:#FFFFFF; font-size:11px; font-weight:700; line-height:18px; background:#6B7682}
 .infobox .grpbox .item .ly > .graphgroup .monthbox > .box::before{content:''; position:absolute; display:block; width:12px; height:10px; top:-7px}
 .infobox .grpbox .item .ly > .graphgroup .monthbox > .box.start{left:0}
 .infobox .grpbox .item .ly > .graphgroup .monthbox > .box.start::before{left:8px}
