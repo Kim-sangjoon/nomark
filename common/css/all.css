@@ -939,9 +939,9 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 
 /* Main layout */
 html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidden}
-.wrapper{display:flex; flex-direction:column; width:100%; min-width:360px; background:var(--main-bgcolor); height:100vh; transition:all .2s}
+.wrapper{width:100%; min-width:360px; background:var(--main-bgcolor); height:100vh; transition:all .2s}
 .wrapper.white{background:var(--bgcolor-wrapper-white)}
-.header{flex-grow:0; flex-shrink:0; padding:15px 16px; position:relative; display:block; flex:none; /* height:25px */}
+.header{padding:15px 0 16px; position:fixed; top:0; width:100%}
 /* .header + .header{display:table} */
 .header .titlebar{display:inline; height:56px}
 .header .titlebar h2.title{display:inline-block; font-weight:700; color:var(--main-txtcolor-title); font-size:16px; vertical-align:middle; height:25px}
@@ -966,7 +966,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .wrapper.popup .searchbox{background:var(--bgcolor-wrapper-popup-searchbox)}
 .wrapper.popup .container section{margin-top:8px; background:var(--bgcolor-popup-container-section); height: calc(100% - 8px)}
 .wrapper.popup .container section.h100{display:inline-block; width:100%; height:calc(100% - 8px); background:var(--popup-bgcolor-h100); transition:all .2s}
-.container{flex-grow:1; display:block; overflow-y:auto; -webkit-overflow-scrolling:touch}
+.container{display:block; overflow-y:auto; margin-top:55px; height:calc(100% - 127px); -webkit-overflow-scrolling:touch}
 .container.nobottom{display:block; height:calc( 100vh - 55px)}
 .container .container_inner{padding:0 16px 16px 16px}
 .header.white_bg + .container .container_inner{background: var(--bgcolor-container-inner)}
@@ -1014,7 +1014,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .ctbox .psbox .ct_text{display:inline-block; font-weight:500; color:var(--textcolor-ctbox-psbox-cttext); font-size:12px; line-height:32px; margin-left:8px; width:calc(100% - 80px); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .ctbox .psbox .process{display:inline-block; position:relative; font-weight:700; color:var(--textcolor-ctbox-psbox-process); width:40px; line-height:32px; margin-right:8px}
 .ctbox .psbox .process::after{content:''; display:block; position:absolute; top:7px; right:0; height:18px; width:18px; background-image:var(--ico-arrow-right)}
-.bottomMenu{flex-grow:0; flex-shrink:0; width:100%; min-width:360px; height:72px; background:var(--bgcolor-navibox); border-top:1px solid var(--border-color-navibox-top); box-sizing:border-box; transition:all .2s; display:block; flex:none}
+.bottomMenu{width:100%; min-width:360px; height:72px; background:var(--bgcolor-navibox); border-top:1px solid var(--border-color-navibox-top); box-sizing:border-box; position:fixed; bottom:0; z-index: 1;  transition:all .2s}
 .bottomMenu .navbox{display:flex; flex-direction:row; justify-content:space-around}
 .bottomMenu .navbox .menu01,
 .bottomMenu .navbox .menu02,
