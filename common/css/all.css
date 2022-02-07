@@ -961,10 +961,11 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .header.white_bg + .container.multisection{background:var(--bgcolor-container-inner)}
 
 /* popup layout */
-.wrapper.popup{display:flex; background:var(--popup-bgcolor)}
+.wrapper.popup{display:flex; flex-direction:column; background:var(--popup-bgcolor)}
 .wrapper.popup .header{background:var(--popup-header-bgcolor-h100); margin-top:0; transition:all .2s}
 .wrapper.popup .searchbox{background:var(--bgcolor-wrapper-popup-searchbox)}
 .wrapper.popup .container section{margin-top:8px; background:var(--bgcolor-popup-container-section); height: calc(100% - 8px)}
+.wrapper.popup .container.multisection section{height:auto}
 .wrapper.popup .container section.h100{display:inline-block; width:100%; height:calc(100% - 8px); background:var(--popup-bgcolor-h100); transition:all .2s}
 .container{display:block; overflow-y:auto; margin-top:55px; width:100%; height:calc(100% - 127px); -webkit-overflow-scrolling:touch}
 .container.confirmlist{height:calc(100% - 135px)}
@@ -1116,7 +1117,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .btn_df.ico span{vertical-align:middle; font-size:15px; color:#56606B;font-weight:700}
 .btn_cm{flex:1; border:none; background:#7B558D; height:48px; border-radius:4px; color:#FFFFFF; font-weight:700; font-size:15px; text-align:center; letter-spacing:-0.02em}
 .btn_cm.w2trigger_disabled{background:#E8EFF5; color:#BEC9D4}
-.btn_sh{flex:1; border:none; background:#7B558D; border-radius:4px; color:#FFFFFF; font-weight:700; font-size:15px; line-height:48px; text-align:center; letter-spacing:-0.02em}
+.btn_sh{flex:1; border:none; background:#7B558D; border-radius:4px; color:#FFFFFF; font-weight:700; font-size:15px; height:auto; line-height:48px; text-align:center; letter-spacing:-0.02em}
 .btn_sh.w2trigger_disabled,
 .btn_df.w2trigger_disabled,
 .btn_cm.w2trigger_disabled{background:var(--bgcolor-btn); color:var(--textcolor-btn)}
@@ -1338,7 +1339,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .white_bgbox .white_bgboxwrap.main.titleinfo{height:calc(100vh - 171px)}
 
 .messagebox{position:relative; background:var(--bgcolor-messagbox); height:100%; width:100%}
-/* .messagebox .messageboxwrap{} */
+.messagebox .messageboxwrap{background:var(--bgcolor-messagbox)}
 .messagebox .messageboxwrap.main{margin-top:8px; background:var(--bordercolor-messageboxwrap-main-section)}
 .messagebox .messageboxwrap.main.btnfix{margin-bottom:80px}
 .messagebox .messageboxwrap.main.titleinfo{height:calc(100vh - 171px)}
@@ -1384,7 +1385,7 @@ input.adsearch{padding-left:40px; background-image:url(./../images/ico_search32.
 .alram_listbox .dfbox .rta{margin-top:2px}
 .alram_listbox .dfbox .text{font-weight:700; font-size:13px; line-height:20px; color:var(--textcolor-alram-listbox-dfbox-text); margin-right:6px}
 .alram_listbox .dfbox .num{font-weight:400; font-size:13px; line-height:20px;color:var(--textcolor-alram-listbox-dfbox-num)}
-.btn_cf{background:var(--bgcolor-btn-cf); border:1px solid var(--bordercolor-btn-cf); box-sizing:border-box; border-radius:2px; color:var(--textcolor-btn-cf); font-size:14px; font-weight:700; padding:5.5px 8px; line-height:19px; height:auto}
+.btn_cf{background:var(--bgcolor-btn-cf); border:1px solid var(--bordercolor-btn-cf); box-sizing:border-box; border-radius:2px; color:var(--textcolor-btn-cf); font-size:14px; font-weight:700; padding:5.5px 8px; line-height:19px; width:auto; height:auto}
 .btn_cf + .btn_cf{margin-left:4px}
 .btn_cf.gridview,
 .btn_cf.cardview{position:relative; padding-left:30px; background-position:8px 50%; background-repeat:no-repeat; background-color:var(--bgcolor-btn-cf)}
@@ -1413,7 +1414,7 @@ input.adsearch{padding-left:40px; background-image:url(./../images/ico_search32.
 .alram_listbox .listbox2 .detailbox .detailbtnbox, .detailbtnbox{display:inline-block; width:100%; border-top:1px solid var(--bordercolor-alram-listbox-top); margin-top:12px; padding-top:12px; height:auto; overflow:hidden}
 .alram_listbox .listbox2 .detailbox .btnbox{display:inline-block; width:100%}
 .alram_listbox .listbox2 .detailbox .lta{display:inline-block}
-.alram_listbox .listbox2 .detailbox .lta span{color:var(--textxcolor-alram_listbox-listbox2-detailbox-lta-span); line-height:18px}
+.alram_listbox .listbox2 .detailbox .lta span{color:var(--textxcolor-alram_listbox-listbox2-detailbox-lta-span); font-size:12px; line-height:18px}
 .alram_listbox .listbox2 .detailbox .lta .status{font-weight:400}
 .alram_listbox .listbox2 .detailbox .lta .time{font-weight:200}
 .alram_listbox .listbox2 .detailbox .lta .bar{display:inline-block; background:#BEC9D4; height:11px; width:1px; margin:4px 8px 3px 8px; vertical-align:middle}
