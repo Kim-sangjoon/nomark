@@ -966,7 +966,9 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .wrapper.popup .searchbox{background:var(--bgcolor-wrapper-popup-searchbox)}
 .wrapper.popup .container section{margin-top:8px; background:var(--bgcolor-popup-container-section); height: calc(100% - 8px)}
 .wrapper.popup .container section.h100{display:inline-block; width:100%; height:calc(100% - 8px); background:var(--popup-bgcolor-h100); transition:all .2s}
-.container{display:block; overflow-y:auto; margin-top:55px; height:calc(100% - 127px); -webkit-overflow-scrolling:touch}
+.container{display:block; overflow-y:auto; margin-top:55px; width:100%; height:calc(100% - 127px); -webkit-overflow-scrolling:touch}
+.container.confirmlist{height:calc(100% - 135px)}
+.wrapper.popup .container{height:calc(100% - 55px)}
 .container.nobottom{display:block; height:calc( 100vh - 55px)}
 .container .container_inner{padding:0 16px 16px 16px}
 .header.white_bg + .container .container_inner{background: var(--bgcolor-container-inner)}
@@ -1382,7 +1384,7 @@ input.adsearch{padding-left:40px; background-image:url(./../images/ico_search32.
 .alram_listbox .dfbox .rta{margin-top:2px}
 .alram_listbox .dfbox .text{font-weight:700; font-size:13px; line-height:20px; color:var(--textcolor-alram-listbox-dfbox-text); margin-right:6px}
 .alram_listbox .dfbox .num{font-weight:400; font-size:13px; line-height:20px;color:var(--textcolor-alram-listbox-dfbox-num)}
-.btn_cf{background:var(--bgcolor-btn-cf); border:1px solid var(--bordercolor-btn-cf); box-sizing:border-box; border-radius:2px; color:var(--textcolor-btn-cf); font-size:14px; font-weight:700; padding:5.5px 8px; line-height:19px}
+.btn_cf{background:var(--bgcolor-btn-cf); border:1px solid var(--bordercolor-btn-cf); box-sizing:border-box; border-radius:2px; color:var(--textcolor-btn-cf); font-size:14px; font-weight:700; padding:5.5px 8px; line-height:19px; height:auto}
 .btn_cf + .btn_cf{margin-left:4px}
 .btn_cf.gridview,
 .btn_cf.cardview{position:relative; padding-left:30px; background-position:8px 50%; background-repeat:no-repeat; background-color:var(--bgcolor-btn-cf)}
