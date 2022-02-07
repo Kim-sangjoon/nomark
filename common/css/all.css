@@ -1161,7 +1161,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .carouselbox .itembox > .item.black,.carouselbox.col .itembox > .item.black{background:var(--bgcolor-carouselbox-itembox-item-black-carouselbox-col-itembox-item-black); margin-right:0; margin-bottom:0}
 .carouselbox.col .itembox > .item{flex:none; width:calc(100vw - 32px); background:var(--bgcolor-carouselbox-itembox-item); border-radius:8px; height:auto;  margin-bottom:10px; margin-right:0px}
 .carouselbox.col .itembox > .item .itemwrap ul.listbox{height:fit-content}
-.swiper-container{width:calc(100% - 32px); padding:0 16px; height:100%}
+.swiper-container{width:calc(100% - 32px); padding:0 16px !important; height:100%}
 .swiper-slide{text-align:left; font-size:18px; background:#FFFFFF; display:-webkit-box; display:-ms-flexbox; display:-webkit-flex; display:flex; -webkit-box-pack:center; -ms-flex-pack:center; -webkit-justify-content:center; justify-content:center; -webkit-box-align:center; -ms-flex-align:center; -webkit-align-items:center; align-items:center}
 .swiper-slide img{display:block; width:100%; height:100%; object-fit:cover}
 
