@@ -565,11 +565,11 @@
 		console.log(swiper);
 		
 		$(".vhtoggle").on("click",function(){
-			if(carouselbox01.hasClass("col")){
-				carouselbox01.removeClass("col");
+			if($("#mf_carouselbox01").hasClass("col")){
+				$("#mf_carouselbox01").removeClass("col");
 				swiper.enabled = true;				
 			} else {
-				carouselbox01.addClass("col");
+				$("#mf_carouselbox01").addClass("col");
 				swiper.enabled = false;
 			}
 		});	
