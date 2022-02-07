@@ -1181,10 +1181,10 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .carouselbox .itembox > .item .itemwrap ul.listbox li.mobile .pdtitle::before{background:url(./../images/ico_smartphone_white18.svg)}
 .carouselbox .itembox > .item .itemwrap ul.listbox li.internet .pdtitle::before{background:url(./../images/ico_internet_white18.svg)}
 .carouselbox .itembox > .item .itemwrap ul.listbox li.tv .pdtitle::before{background:url(./../images/ico_tv_white18.svg)}
-.carouselbox .itembox > .item .itemwrap ul.listbox li .liwrap .txt{display:block; font-weight:200; font-size:14px; margin-top:-3px; line-height:21px}
+.carouselbox .itembox > .item .itemwrap ul.listbox li .liwrap .txt{display:block; font-weight:400; font-size:14px; margin-top:-3px; line-height:21px}
 .carouselbox .itembox > .item .itemwrap ul.listbox li.internet .liwrap .txt{display:inline-block}
 .carouselbox .itembox > .item .itemwrap ul.listbox li.tv .liwrap .txt{display:inline-block}
-.carouselbox .itembox > .item .itemwrap ul.listbox li .liwrap .num{display:block; font-weight:100; font-size:12px; margin-top:-3px; line-height:18px}
+.carouselbox .itembox > .item .itemwrap ul.listbox li .liwrap .num{display:block; font-weight:400; font-size:12px; margin-top:-3px; line-height:18px}
 .carouselbox .itembox > .item .itemwrap ul.listbox li .liwrap .btn_search{background-color:var(--bgcolor-carouselbox-liwrap-btn-search); background-image:url(./../images/ico_search_white21.svg); background-repeat:no-repeat; background-position:center; border-radius:2px; margin-left:8px; border:none; width:32px; height:32px; font-size:1px; color:transparent; letter-spacing:9999px}
 .carouselbox .itembox > .item.black .itemwrap ul.listbox li .liwrap .btn_search{background-color:var(--bgcolor-carouselbox-liwrap-btn-search-black)}
 .vhtoggle{position:absolute; top:8px; right:8px; width:70px; height:37px; background:var(--bgcolor-vhtoggle); box-shadow:0px 0px 2px rgba(86, 36, 104, 0.22), 0px 7px 20px rgba(167, 81, 235, 0.3); border-radius:99px; z-index:1}
