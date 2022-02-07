@@ -1238,7 +1238,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .infobox .grpbox .item .ly > .graphgroup .monthbox > .box.sky{background:#7ABADE}
 .infobox .grpbox .item .ly > .graphgroup .monthbox > .box.sky::before{background:url(./../images/ico_triangle_sky.svg)}
 .infobox .grpbox .item .ly > .graphgroup .monthbox > .box.black::before{background:url(./../images/ico_triangle_black.svg)}
-.infobox .grpbox .other{display:inline-block; width:100%; text-align:right; margin-bottom:16px; font-size:12px; font-weight:200; color:var(--textcolor-infobox-grpbox-item-ly-textgroup)}
+.infobox .grpbox .other{display:inline-block; width:100%; text-align:right; margin-bottom:16px; font-size:12px; font-weight:400; color:var(--textcolor-infobox-grpbox-item-ly-textgroup)}
 .infobox .grptextbox{margin-top:16px}
 .infobox .grptextbox > div{margin-top:10px; display:flex; justify-content:space-between}
 .infobox .grptextbox > div:first-child{margin-top:0}
