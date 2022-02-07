@@ -951,7 +951,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .header .btn_menu{display:block; height:24px; width:24px; background:var(--ico-menu); position:absolute; top:16px; right:16px}
 .header .btn_close{display:block; height:24px; width:24px; background:var(--ico-close); position:absolute; top:16px; right:16px}
 .header .btn_pre{display:block; height:24px; width:24px; background:var(--ico-pre); position:absolute; top:16px; left:16px}
-.header .btn_top{display:block; height:32px; border:none; position:absolute; top:12px; left:16px; color:var(--textcolor-header-btn-top); font-size:14px; font-weight:500; padding:0 10px 0 28px; border-radius:3px}
+.header .btn_top{display:block; height:32px; width:auto; border:none; position:absolute; top:12px; left:16px; color:var(--textcolor-header-btn-top); font-size:14px; font-weight:500; padding:0 10px 0 28px; border-radius:3px}
 .header .btn_top.preSearch{background:var(--ico-arrow-pre-text) no-repeat var(--bgcolor-header-btn-top-preSearch); background-position:5px center}
 .header .user_info{display:inline-block; width:100%; text-align:center; margin-top:16px}
 .header .user_info .text{font-weight:500; font-size:13px; color:#8996A3; vertical-align:middle}
@@ -1199,7 +1199,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .infobox + .infobox{margin-top:8px}
 .infobox .dfbox{display:inline-block; position:relative; width:100%; box-sizing:border-box; vertical-align:middle}
 .infobox .dfbox h3{display:inline-block; font-size:17px; color:var(--textcolor-infobox-dfbox-h3); font-weight:700; line-height:32px}
-.infobox .dfbox .btn_df{border:1px solid var(--bordercolor-btn-df); box-sizing:border-box; border-radius:2px; padding:5.5px 8px; color:var(--textcolor-btn-df); background:var(--bgcolor-btn-df); height:32px; line-height:19px; font-weight:700; font-size:14px}
+.infobox .dfbox .btn_df{border:1px solid var(--bordercolor-btn-df); width:auto; box-sizing:border-box; border-radius:2px; padding:5.5px 8px; color:var(--textcolor-btn-df); background:var(--bgcolor-btn-df); height:32px; line-height:19px; font-weight:700; font-size:14px}
 .infobox .dfbox .rta span{display:inline-block; color:#202020; font-size:15px; line-height:32px; margin-right:8px; font-weight:400; vertical-align:middle}
 .infobox .listbox{margin-top:16px}
 .infobox .listbox .item{position:relative; width:100%; box-sizing:border-box; vertical-align:middle}
