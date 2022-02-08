@@ -941,7 +941,7 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidden}
 .wrapper{width:100%; min-width:360px; background:var(--main-bgcolor); height:100vh; transition:all .2s}
 .wrapper.white{background:var(--bgcolor-wrapper-white)}
-.header{padding:15px 0 16px; position:fixed; top:0; width:100%}
+.header{padding:15px 0 16px; position:fixed; top:0; width:100%; z-index: 1}
 /* .header + .header{display:table} */
 .header .titlebar{display:inline; height:56px}
 .header .titlebar h2.title{display:inline-block; font-weight:700; color:var(--main-txtcolor-title); font-size:16px; vertical-align:middle; height:25px}
@@ -1174,6 +1174,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .carouselbox .itembox > .item .itemwrap .titlebox .num{font-size:13px; font-weight:400; color:var(--textcolor-carouselbox-itembox-item-itemwrap-titlebox-num)}
 .carouselbox .itembox > .item.black .itemwrap .titlebox .num{color:var(--textcolor-carouselbox-itembox-item-black-itemwrap-titlebox-num)}
 .carouselbox .itembox > .item .itemwrap ul.listbox{display:flex; flex-direction:column; padding:8px; padding-bottom:0; height:156px; overflow:hidden; overflow-y:auto}
+.carouselbox .itembox > .item .itemwrap ul.listbox li:last-child{padding-bottom:12px;}
 .carouselbox .itembox > .item .itemwrap ul.listbox li{background:transparent; border-radius:4px; padding:6px 8px; height:32px}
 .carouselbox .itembox > .item .itemwrap ul.listbox li.selected{background:var(--bgcolor-carouselbox-itembox-item-itemwrap-ul-listbox-li-selected); border-radius:4px; padding:6px 8px}
 .carouselbox .itembox > .item .itemwrap ul.listbox li .pdtitle{position:relative; font-size:14px; font-weight:400; padding-left:26px; line-height:30px}
