@@ -1167,7 +1167,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 
 /* 캐러셀 */
 .carouselbox .itembox > .item .itemwrap{width:100%; height:100%}
-.carouselbox .itembox > .item .itemwrap .titlebox{display:inline-block; width:100%; border-bottom:1px solid var(--bordercolor-carouselbox-itembox-item-itemwrap-titlebox-bottom); padding:9.5px 16px}
+.carouselbox .itembox > .item .itemwrap .titlebox{display:inline-block; width:100%; border-bottom:1px solid var(--bordercolor-carouselbox-itembox-item-itemwrap-titlebox-bottom); margin:auto; padding:9.5px 16px}
 .carouselbox .itembox > .item.black .itemwrap .titlebox{border-bottom:1px solid var(--bordercolor-carouselbox-itembox-item-black-itemwrap-titlebox)}
 .carouselbox .itembox > .item .itemwrap .titlebox .badge{font-size:13px; font-weight:400; padding:0 3.5px 1px 3px; background:var(--bgcolor-carouselbox-itembox-item-itemwrap-titlebox-badge); margin-right:6px}
 .carouselbox .itembox > .item .itemwrap .titlebox .title{font-size:15px; font-weight:400; margin-right:6px}
