@@ -1341,7 +1341,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .messagebox{position:relative; background:var(--bgcolor-messagbox); height:100%; width:100%}
 .messagebox .messageboxwrap{background:var(--bgcolor-messagbox)}
 .messagebox .messageboxwrap.main{margin-top:8px; background:var(--bordercolor-messageboxwrap-main-section)}
-.messagebox .messageboxwrap.main.btnfix{margin-bottom:80px}
+.messagebox .messageboxwrap.main.btnfix{padding-bottom:80px}
 .messagebox .messageboxwrap.main.titleinfo{height:calc(100vh - 171px)}
 
 .sectionbg{height:calc(100% - 8px)}
