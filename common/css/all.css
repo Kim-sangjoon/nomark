@@ -968,7 +968,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .wrapper.popup .container.multisection section{height:auto}
 .wrapper.popup .container section.h100{display:inline-block; width:100%; height:calc(100% - 8px); background:var(--popup-bgcolor-h100); transition:all .2s}
 .container{display:block; overflow-y:auto; /* margin-top:55px; */ padding-bottom:72px; width:100%; height:calc(100% - 127px); -webkit-overflow-scrolling:touch}
-.container.btnfix{height:calc(100% - 207px)}
+.container.btnfix{height:calc(100% - 207px); padding-bottom:80px}
 .container.confirmlist{height:calc(100% - 135px)}
 .wrapper.popup .container{height:calc(100% - 55px)}
 .container.nobottom{display:block; height:calc( 100vh - 55px)}
