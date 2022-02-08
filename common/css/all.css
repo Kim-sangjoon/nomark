@@ -941,7 +941,7 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidden}
 .wrapper{width:100%; min-width:360px; background:var(--main-bgcolor); height:100vh; transition:all .2s}
 .wrapper.white{background:var(--bgcolor-wrapper-white)}
-.header{padding:15px 0 16px; position:fixed; top:0; width:100%; z-index: 1}
+.header{padding:15px 0 16px;  position:relative; top:0; width:100%; z-index: 1}
 /* .header + .header{display:table} */
 .header .titlebar{display:inline; height:56px}
 .header .titlebar h2.title{display:inline-block; font-weight:700; color:var(--main-txtcolor-title); font-size:16px; vertical-align:middle; height:25px}
@@ -967,7 +967,7 @@ html,body,.wrapper,.container,.container_inner,.bottomMenu,.navbox{overflow:hidd
 .wrapper.popup .container section{margin-top:8px; background:var(--bgcolor-popup-container-section); height: calc(100% - 8px)}
 .wrapper.popup .container.multisection section{height:auto}
 .wrapper.popup .container section.h100{display:inline-block; width:100%; height:calc(100% - 8px); background:var(--popup-bgcolor-h100); transition:all .2s}
-.container{display:block; overflow-y:auto; margin-top:55px; width:100%; height:calc(100% - 127px); -webkit-overflow-scrolling:touch}
+.container{display:block; overflow-y:auto; /* margin-top:55px; */ width:100%; height:calc(100% - 127px); -webkit-overflow-scrolling:touch}
 .container.confirmlist{height:calc(100% - 135px)}
 .wrapper.popup .container{height:calc(100% - 55px)}
 .container.nobottom{display:block; height:calc( 100vh - 55px)}
