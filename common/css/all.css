@@ -881,7 +881,7 @@ input[type="radio"]:checked + .w2radio_label.w2radio_disabled:before, input[type
 .inputgroup input[type=datetime-local],
 .inputgroup input[type=month],
 .inputgroup input[type=week],
-.inputgroup input[type=time]{position:relative; /* text-align: center; */ width:100% !important; padding-left:40px !important}
+.inputgroup input[type=time]{position:relative; text-align: center; width:100% !important; /* padding-left:40px !important */}
 .inputgroup input::-webkit-datetime-edit-text,
 .inputgroup input::-webkit-datetime-edit-ampm-field,
 .inputgroup input::-webkit-datetime-edit-day-field,
