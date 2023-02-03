@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html,body{padding:0; margin:0;}
+            .boxwrap{display:flex; height: 100vh; width: 100%; flex-direction: column; justify-content: center; align-items: center;}
+            .textbox{font-size: 24px; font-weight: bold; color:#333;}
+            .btnWrap{margin-top: 20px;}
+        </style>
+    </head>
+    <!-- <body onload="myFunction()"> -->
+    <body>
+        <div class="boxwrap">
+            <div class="textbox" id="text01">로또1등 가즈아!!!!</div>
+            <div class="btnWrap"><input type="button" value="GO!!" onclick="myFunction()"></div>
+        </div>
+    </body>
+    <script>
+        function myFunction(){
+            const lotto = [];
+            const sText = document.getElementById('text01');
+            while(lotto.length < 6){
+                let number = parseInt(Math.random()*45)+1;
+                if(lotto.indexOf(number) < 0){
+                    lotto.push(number);
+                }
+            }
+            sText.innerText = lotto;
+        }
+    </script>
+</html>
