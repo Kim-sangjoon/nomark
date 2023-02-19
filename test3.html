@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>dialog test페이지 입니다.</title>
+<style>
+dialog:modal{
+  border: 1px solid #a0a0a0;
+  border-radius: 10px;
+  width: 400px;
+  height: 250px;
+}
+
+dialog::backdrop {
+    background: rgba(51, 51, 51, .5);
+}
+
+dialog{position: relative;}
+dialog form{position: absolute; bottom: 10px; right: 10px;}
+</style>
+</HEAD> 
+<BODY> 
+<button>Show modal</button>
+<dialog>
+  <div>Hello! I'm a modal!</div>
+  <form method="dialog">
+    <button value="close">Close</button>
+    <button value="confirm">Confirm</button>
+  </form>
+</dialog>
+
+<script>
+  const button = document.querySelector("button");
+  const dialog = document.querySelector("dialog");
+  button.addEventListener("click", () => {
+      dialog.showModal();
+  });
+  dialog.addEventListener("close", () => {
+      console.log(dialog.returnValue);
+  });
+</script>
+
+</BODY>
+</HTML>
