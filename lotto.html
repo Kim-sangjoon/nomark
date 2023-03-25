@@ -27,6 +27,7 @@
                 if(lotto.indexOf(number) < 0){
                     lotto.push(number);
                 }
+                lotto.sort((a,b)=>a-b);
             }
             sText.innerText = lotto;
         }
