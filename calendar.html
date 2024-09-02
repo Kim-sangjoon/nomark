@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>달력</title>
+    <style>
+        .title{text-align: center; margin-top: 20px; margin-bottom:10px;}
+        .title span{font-size: 18px; font-weight: bold;}
+        table {width: 100%;border-collapse: collapse;}
+        th, td {position: relative;height: 80px; border: 1px solid #ddd;}
+        .header {background-color: #f2f2f2;}
+        .header th {height: 35px;}
+        .header tr th:first-of-type,
+        .container tr td:first-of-type{color:#db472d}
+        .header tr th:last-of-type,
+        .container tr td:last-of-type{color:#4545ce}
+        .prev-date, .next-date{opacity: 0.4;}
+        .dateNum{position: absolute; top: 10px; right: 10px;}
+    </style>
+</head>
+<body>
+    <div class="title"><span id="calendarTitle"></span></div>
+    <div id="calendar"></div>
+
+    <script>
+        function generateCalendar(year, month) {
+            const currentMonth = month;
+            const daysOfWeek = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
+            const lastDay = new Date(year, currentMonth + 1, 0).getDate();
+            const firstDayIndex = new Date(year, currentMonth, 1).getDay();
+            const lastDayIndex = new Date(year, currentMonth, lastDay).getDay();
+            const prevLastDay = new Date(year, currentMonth, 0).getDate();
+            const nextDays = 7 - lastDayIndex - 1;
+
+            let calendar = `<table><thead class="header"><tr>${daysOfWeek.map(day => `<th>${day}</th>`).join('')}</tr></thead><tbody class="container"><tr>`;
+
+            for (let i = firstDayIndex; i > 0; i--) {
+                calendar += `<td class="prev-date"><div class="dateNum">${prevLastDay - i + 1}</div></td>`;
+            }
+
+            for (let i = 1; i <= lastDay; i++) {
+                calendar += `<td><div class="dateNum">${i}</div></td>`;
+                if (new Date(year, currentMonth, i).getDay() === 6) {
+                    calendar += `</tr><tr>`;
+                }
+            }
+
+            for (let i = 1; i <= nextDays; i++) {
+                calendar += `<td class="next-date"><div class="dateNum">${i}</div></td>`;
+            }
+
+            calendar += `</tr></tbody></table>`;
+            document.getElementById('calendar').innerHTML = calendar;
+            document.getElementById('calendarTitle').innerHTML = `${year}년 ${month + 1}월 달력`;
+        }
+
+        const currentDate = new Date();
+        console.log(currentDate);
+        generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+    </script>
+</body>
+</html>
