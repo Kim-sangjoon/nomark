@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3단계 셀렉트 박스 - 바닐라 JS 사용</title>
+</head>
+<body>
+    <label for="select1">1depth:</label>
+    <select id="select1">
+        <option value="">선택하세요</option>
+        <option value="fruit">과일</option>
+        <option value="animal">동물</option>
+    </select>
+
+    <label for="select2">2depth:</label>
+    <select id="select2" disabled>
+        <option value="">선택하세요</option>
+    </select>
+
+    <label for="select3">3depth:</label>
+    <select id="select3" disabled>
+        <option value="">선택하세요</option>
+    </select>
+
+    <script>
+        // JSON 데이터 정의
+        const data = {
+            "fruit": {
+                "apple": ["빨간 사과", "초록 사과"],
+                "banana": ["노란 바나나", "초록 바나나"],
+                "cherry": ["빨간 체리", "검은 체리"]
+            },
+            "animal": {
+                "dog": ["래브라도 리트리버", "푸들"],
+                "cat": ["페르시안 고양이", "샴 고양이"],
+                "rabbit": ["하얀 토끼", "갈색 토끼"]
+            }
+        };
+
+        // 1depth 선택에 따른 2depth 내용 변경
+        document.getElementById('select1').addEventListener('change', function() {
+            const value = this.value;
+            const select2 = document.getElementById('select2');
+            const select3 = document.getElementById('select3');
+            let options = '<option value="">선택하세요</option>';
+
+            // 2depth와 3depth 초기화
+            select2.disabled = true;
+            select3.disabled = true;
+            select3.innerHTML = '<option value="">선택하세요</option>';
+
+            if (value) {
+                const subItems = Object.keys(data[value]);
+                subItems.forEach(function(item) {
+                    options += `<option value="${item}">${item}</option>`;
+                });
+                select2.innerHTML = options;
+                select2.disabled = false;
+            } else {
+                select2.innerHTML = options;
+            }
+        });
+
+        // 2depth 선택에 따른 3depth 내용 변경
+        document.getElementById('select2').addEventListener('change', function() {
+            const value1 = document.getElementById('select1').value;
+            const value2 = this.value;
+            const select3 = document.getElementById('select3');
+            let options = '<option value="">선택하세요</option>';
+
+            select3.disabled = true;
+
+            if (value1 && value2) {
+                const subItems = data[value1][value2];
+                subItems.forEach(function(item) {
+                    options += `<option value="${item}">${item}</option>`;
+                });
+                select3.innerHTML = options;
+                select3.disabled = false;
+            } else {
+                select3.innerHTML = options;
+            }
+        });
+    </script>
+</body>
+</html>
